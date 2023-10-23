@@ -1,11 +1,14 @@
+
 import streamlit as st
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
-import matplotlib.pyplot as plt
 from plotly.subplots import make_subplots
 import plotly.express as px
 import seaborn as sns
+import plotly.graph_objs as go
+from plotly.subplots import make_subplots
+from plotly.offline import init_notebook_mode, iplot
 
 st.title('Projet Data Visualisation')
 
@@ -85,6 +88,7 @@ fig = px.bar(
     labels={"cut": "Cut"},
     color_discrete_sequence=px.colors.sequential.Plasma,
 )
+
 
 # Personnaliser la mise en page
 fig.update_xaxes(title_text="Cut")
